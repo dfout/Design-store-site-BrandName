@@ -158,17 +158,19 @@ main > section{
     display:flex;
     justify-content: center;
     padding-top:100px;
+    padding-bottom:50px;
 }
 .horizontal-images{
     display:flex;
+    position:relative;
     justify-content: space-between;
-    padding-top:60px;
+    padding-top:20px;
     padding-right:20px;
     overflow-y:scroll;
 }
 
 .grid-images{
-    padding-top:200px;
+    /* padding-top:200px; */
     padding-bottom: 200px;
     display:grid;
     grid-template-columns: repeat(3,1fr);
@@ -181,3 +183,75 @@ main > section{
     justify-content: center;
     align-items:center;
 } */
+
+.image-container{
+    position:relative;
+    width:500px;
+}
+/*
+.hover-info{
+    position:absolute;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.466);
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+    gap:10px;
+} */
+.hover-info h4, p{
+    margin:0;
+}
+
+.hover-info{
+    display:none;
+}
+
+.image-container:hover .hover-info{
+    position:absolute;
+    bottom:0;
+    background-color: rgba(255, 255, 255, 0.466);
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+    gap:10px;
+}
+
+.category-hover-info{
+    display:none;
+}
+
+.image-container:hover .category-hover-info{
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.487);
+    width:100%;
+    height:50%;
+    bottom:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-self:center;
+    text-align:center;
+    gap:10px;
+}
+
+#gallery{
+    font-size:80px;
+    text-align:center;
+    margin:0;
+    padding-top:200px;
+
+}
+
+#Best-Sellers-title{
+    text-align: center;
+    font-size:80px;
+    padding-top:100px;
+}

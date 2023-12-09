@@ -114,12 +114,14 @@ nav a{
 
 main{
     flex:3;
+    position:relative;
     display:flex;
     flex-direction:column;
 
 }
 footer{
-    flex:10;
+    /* flex:10; */
+    height:700px;
     /* background-color: rgb(245, 246, 233); */
     background-color:rgb(250, 251, 243);
 }
@@ -156,9 +158,11 @@ main > section{
 
 .main-image{
     display:flex;
+    position:relative;
     justify-content: center;
     padding-top:100px;
     padding-bottom:50px;
+
 }
 .horizontal-images{
     display:flex;
@@ -275,4 +279,10 @@ footer > h3{
     width:fit-content;
     border-bottom: 1px solid black;
     padding-bottom:2px;
+}
+#section-two{
+    margin:0;
+}
+#section-three{
+    margin:0;
 }

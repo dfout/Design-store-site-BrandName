@@ -1,0 +1,33 @@
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 5% 1fr 5%;
+    min-height: 200vh;
+    overflow-y: auto;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+
+    padding: 10px; /* Add some padding for content height */
+}
+
+main {
+    grid-area: main;
+    background-color: orange;
+
+    overflow: auto; /* Enable scrolling within the main section if content overflows */
+    padding: 10px; /* Add some padding for content height */
+}
+
+footer {
+    grid-area: footer;
+    background-color: purple;
+    padding: 10px; /* Add some padding for content height */
+}

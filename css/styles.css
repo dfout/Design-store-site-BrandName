@@ -348,3 +348,22 @@ footer > h3{
     padding-bottom:60px;
     border-radius:10px;
 }
+
+.logo-on-main{
+    position:relative;
+
+}
+
+#logo-on-photo{
+    position:absolute;
+    z-index: 1;
+
+}
+
+#logo-on-photo >img{
+    height:500px;
+    width:900px;
+    padding-left:150px;
+    margin:0;
+    padding-top:0;
+}
